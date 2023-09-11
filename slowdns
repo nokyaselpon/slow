@@ -3,15 +3,15 @@ clear
 slowdns () {
     echo -e "SLOW DNS GLOBE/TM & STS"
     echo ""
-    echo -e "Install SlowDNS SSH"
-    echo -e "See information"
-    echo -e "Start SlowDNS"
-    echo -e "Restart SlowDNS"
-    echo -e "STOP SlowDNS"
-    echo -e "Remove SlowDNS"
-    echo -e "EXIT"
+    echo -e "1.)Install SlowDNS SSH"
+    echo -e "2.)See information"
+    echo -e "3.)Start SlowDNS"
+    echo -e "4.)Restart SlowDNS"
+    echo -e "5.)STOP SlowDNS"
+    echo -e "6.)Remove SlowDNS"
+    echo -e "0.)EXIT"
     echo ""
-    echo -ne "\033[0;36mWhat do you want to do?:\0033[m " && read option
+    echo -ne "What do you want to do? :" && read option
     case $option in
     1) Option1 ;;
     2) Option2 ;;
@@ -20,7 +20,7 @@ slowdns () {
     5) Option5 ;;
     6) Option6 ;;
     0) Sair ;;
-    *) "Invalid option" ; echo ; slowdns ;;
+    *) "Enter valid option" ; echo ; slowdns ;;
     esac
     }
 
