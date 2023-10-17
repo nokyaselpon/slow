@@ -9,6 +9,7 @@ slowdns () {
     echo -e "4.)Restart SlowDNS"
     echo -e "5.)STOP SlowDNS"
     echo -e "6.)Remove SlowDNS"
+    echo -e "7.)Slowdns v2ray"
     echo -e "0.)EXIT"
     echo ""
     echo -ne "What do you want to do? :" && read option
@@ -19,6 +20,7 @@ slowdns () {
     4) Option4 ;;
     5) Option5 ;;
     6) Option6 ;;
+    6) Option7 ;;
     0) Sair ;;
     *) "Enter valid option" ; echo ; slowdns ;;
     esac
@@ -54,6 +56,12 @@ Option6 () {
     bash /etc/slowdns/stopdns
     bash /etc/slowdns/remove-slow
 }
+
+Option7 () {
+    clear
+    bash /etc/slowdns/slowdns-v2ray
+}
+
 
 Sair() {
     clear
