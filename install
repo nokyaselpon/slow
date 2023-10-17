@@ -39,6 +39,7 @@ wget https://github.com/nokyaselpon/slow/raw/main/dns-server; chmod +x dns-serve
 wget https://raw.githubusercontent.com/nokyaselpon/slow/main/remove-slow; chmod +x remove-slow
 wget https://raw.githubusercontent.com/nokyaselpon/slow/main/slowdns-info; chmod +x slowdns-info
 wget https://raw.githubusercontent.com/nokyaselpon/slow/main/slowdns-ssh; chmod +x slowdns-ssh
+wget https://raw.githubusercontent.com/nokyaselpon/slow/main/slowdns-try; chmod +x slowdns-try
 wget https://raw.githubusercontent.com/nokyaselpon/slow/main/slowdns; chmod +x slowdns; cp slowdns /bin/
 wget https://raw.githubusercontent.com/nokyaselpon/slow/main/stopdns; chmod +x stopdns
 }
