@@ -59,7 +59,7 @@ Option6 () {
 
 Option7 () {
     clear
-    bash /etc/slowdns/slowdns-v2ray
+    bash /etc/slowdns/slowdns-try
 }
 
 
