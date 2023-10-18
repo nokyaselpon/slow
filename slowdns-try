@@ -58,6 +58,7 @@ clear
 echo ""
 echo ""
 echo -ne "Enter your domain: "; read nameserver
+echo -ne "Enter port to use: "; read slowport
 cd /etc/slowdns
 touch infons
 echo $nameserver > infons
@@ -69,6 +70,8 @@ chmod +x startdns
 chmod +x restartdns
 sed -i "s;1234;$nameserver;g" /etc/slowdns/startdns > /dev/null 2>&1
 sed -i "s;1234;$nameserver;g" /etc/slowdns/restartdns > /dev/null 2>&1
+sed -i "s;127.0.0.1:22;127.0.0.1:$slowport;g" /etc/slowdns/startdns > /dev/null 2>&1
+sed -i "s;127.0.0.1:22;127.0.0.1:$slowport;g" /etc/slowdns/restartdns > /dev/null 2>&1
 cp startdns /bin/
 cp restartdns /bin/
 }
